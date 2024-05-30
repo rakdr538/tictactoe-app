@@ -42,7 +42,7 @@ function TicTacToe () {
     };
 
     useEffect(()=> {
-        checkWinner();
+        checkWinner(tiles, setStrikeClass);
     }, [tiles]);
 
  return (
@@ -57,7 +57,16 @@ function TicTacToe () {
 );
 }
 
-function checkWinner() {
+function checkWinner(tiles: Array<string>, setStrikeClass: Function) {
+    for(const {combo, strikeClass} of winningCombinations){
+        const tileValue1 = tiles[combo[0]];
+        const tileValue2 = tiles[combo[1]];
+        const tileValue3 = tiles[combo[2]];
+
+        if (tileValue1 !== null && tileValue1 === tileValue2 && tileValue1 === tileValue3) {
+            setStrikeClass(strikeClass);
+        }
+    }
 
 }
 
