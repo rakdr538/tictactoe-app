@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-Inspired example from https://www.youtube.com/watch?v=4Gt_YyGf6B0
+Inspired example from https://www.youtube.com/watch?v=4Gt_YyGf6B0\
 Thanks to Coding with Adam for this simple tictactoe app!
 
 ## Available Scripts
